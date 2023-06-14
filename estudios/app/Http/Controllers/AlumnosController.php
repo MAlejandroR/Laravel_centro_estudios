@@ -67,9 +67,11 @@ class AlumnosController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Alumnos $alumnos)
+    public function edit(Alumnos $alumno)
     {
         //
+
+        return view("alumnos.edit",compact('alumno'));
     }
 
     /**

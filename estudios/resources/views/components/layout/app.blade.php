@@ -1,3 +1,5 @@
+@props(['titulo'=>'Instituto','metaDescription'=>'Proyectos de alumnos'])
+
 <!doctype html>
 <html lang="en">
 
@@ -5,9 +7,9 @@
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="description" content={{$metaDescription??"Proyectos de alumnos"}}>
+<meta name="description" content={{$metaDescription}}}}>
 @vite(["resources/css/app.css", "resources/js/app.js"]);
-<title>{{$title ?? "Instituto" }}</title>
+<title>{{$titulo }}</title>
 
 <body>
 <div id="app">

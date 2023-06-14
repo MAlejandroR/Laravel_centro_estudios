@@ -1,25 +1,24 @@
 <template>
 
-    <div class="max-h-max block">
+    <div class="flex flex-row justify-center ">
         <!--overflow-auto
                 flex flex-row justify-center-->
-        <table class=" w-full flex flex-col">
-            <caption class="sticky top-0
-                  text-6xl text-amber-400">{{ table_name }}</caption>
-            <thead class="text-2xl bg-white border-b sticky top-20
-flex flex-row justify-between w-full sticky top-20 px-10 mx-10
-">
+        <table class="flex flex-col w-fit">
+            <caption class="text-4xl text-amber-400">{{ table_name }}</caption>
+            <thead class="text-xl uppercase text-fuchsia-600 bg-white
+                          flex flex-row justify-evenly
+                          max-w-full">
             <tr>
-                <th v-for="campo in campos" class ="mx-10 px-10">
+                <th v-for="campo in campos" class ="text-xl text-fuchsia-900 ">
                     {{ campo }}
                 </th>
             </tr>
-            <br>
+
             </thead>
 
-            <tbody class="overflow-y-auto h-72 top-60">
+            <tbody class="overflow-auto h-72">
             <tr v-for="fila in filas">
-                <td v-for="valor in fila">{{ valor }}</td>
+                <td  class=" text8gray-500 px-4" v-for="valor in fila">{{ valor }}</td>
             </tr>
             </tbody>
         </table>
@@ -51,5 +50,7 @@ export default {
 
 
 <style scoped>
-
+.cabecera_tabla {
+    @apply text-xl uppercase text-fuchsia-600 bg-white flex flex-row justify-between max-w-full
+}
 </style>

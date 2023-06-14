@@ -32,6 +32,7 @@ flex flex-row justify-between w-full
  La propiedad "position: sticky" es parte del modelo de posicionamiento de CSS y permite que un elemento se comporte como "relativo" hasta que se desplaza fuera de la ventana de visualización, momento en el cual se comporta como "fijo". Esto significa que el elemento se mantiene en su lugar relativo hasta que alcanza una posición específica en la ventana, y luego se "pega" en esa posición mientras se desplaza el contenido.
 
 ## Orden de devolución de campos de una tabla
- Problma
+ Problema
  Tengo una tabla que tiene unos campos, pero al consultarlo los retorna en un orden diferente a como los devuelven en una sentencia.
+ encontrado info, laravel no garantiza el orden de devolución respecto a la creación con la facade schema
  

@@ -13,9 +13,16 @@ export default {
             '60vh': '60vh',
             '40vh': '40vh',
             '50vh': '50vh',
+        },
+        colors:{
+            'instagram':'#E4405F',
+            'facebook':'#1877F2',
+            'whatsapp':'#25D366',
+            'github':'#181717',
+            'twiter':'#1DA1F2',
         }
     },
   },
-  plugins: [],
+  plugins: [ require('@tailwindcss/forms'),],
 }
 
